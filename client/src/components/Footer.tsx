@@ -6,11 +6,11 @@ function Footer() {
   return (
     <div className="bg-[#FFFFFF1A] text-white py-8">
       <div className="max-w-screen-xl mx-auto px-4">
-        <div className="bg-white/10 p-5 rounded-2xl flex flex-col md:flex-row justify-between items-center gap-6 border border-transparent">
+        <div className="bg-white/10 p-5 rounded-2xl flex flex-col md:flex-row justify-between items-start gap-6 border border-transparent">
           {/* Logo & Links Section */}
           <img className="w-44 h-auto " src={Logo} alt="Logo" />
 
-          <div className="flex flex-col items-center md:items-start">
+          <div className="flex flex-col items-center md:items-start md:mb-16 ">
             <div className="flex flex-col items-center md:items-start gap-6 text-lg font-light">
               <Link to="/" className="text-[#CEF23F] font-medium text-xl">
                 Get Involved
