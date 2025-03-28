@@ -1,17 +1,24 @@
-import Footer from "./components/Footer"
-import { BrowserRouter as Router } from "react-router-dom"
-
+import { Routes, Route } from "react-router-dom";
+import { Navbar, Footer } from "@/components";
+import { HomePage } from "@/pages";
 
 function App() {
   return (
-    <Router>
     <div className="bg-black">
+      {/* NavBar */}
+      <Navbar />
 
-      <Footer/>
+      {/* Pages */}
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
+
+      {/* Footer */}
+      <div className="bg-black">
+        <Footer />
+      </div>
     </div>
-    </Router>
-    
-  )
+  );
 }
 
-export default App
+export default App;
