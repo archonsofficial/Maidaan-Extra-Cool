@@ -12,7 +12,7 @@ export default function Hero() {
     <>
       <div className="flex flex-col items-center justify-center min-h-[80vh] text-white p-6">
         <div className="text-center flex flex-col items-center justify-center ">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold ">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-unbounded ">
             STEP INTO THE
             <span className="block text-[#CEF23F]">MAIDAAN</span>
           </h1>
