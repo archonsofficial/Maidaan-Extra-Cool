@@ -5,8 +5,11 @@
     src: url("./assets/fonts/SansationLight-a5E5.ttf");
     font-family: "sansation-regular";
     src: url("./assets/fonts/SansationRegular-OgJP.ttf");
+    font-family: "unbounded";
+    src: url("./assets/fonts/Unbounded-VariableFont_wght.ttf");
 }
 @theme {
     --font-sansation-light: sansation-light;
     --font-sansation-reg: sansation-regular;
+    --font-unbounded: unbounded;
 }

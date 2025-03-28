@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import { Navbar, Footer } from "@/components";
-import { HomePage } from "@/pages";
+import { AuthPage, HomePage } from "@/pages";
 
 function App() {
   return (
@@ -10,6 +10,7 @@ function App() {
 
       {/* Pages */}
       <Routes>
+        <Route path="/signup" element={<AuthPage />} />
         <Route path="/" element={<HomePage />} />
       </Routes>
 
