@@ -1,3 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap");
 @import "tailwindcss";
-
+@font-face {
+    font-family: "sansation-light";
+    src: url("./assets/fonts/SansationLight-a5E5.ttf");
+    font-family: "sansation-regular";
+    src: url("./assets/fonts/SansationRegular-OgJP.ttf");
+}
+@theme {
+    --font-sansation-light: sansation-light;
+    --font-sansation-reg: sansation-regular;
+}
