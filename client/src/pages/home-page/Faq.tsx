@@ -1,6 +1,7 @@
 // import { Accordion, AccordionItem, Chip } from "@nextui-org/react";
 import { useState } from "react";
-import { ChevronDownIcon } from "@heroicons/react/24/outline";
+// import { ChevronDownIcon } from "@heroicons/react/24/outline";
+import { GoArrowRight } from "react-icons/go";
 import { faqs } from "@/config";
 
 export default function Faq() {
@@ -11,7 +12,7 @@ export default function Faq() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center w-full mb-12">
+    <div className="flex flex-col items-center justify-center w-full mb-12 ">
       <div className="flex flex-col items-center justify-center mb-5 text-white">
         <div className="bg-[#ffffff1a] text-[#cef23f] font-bold text-[13px] text-center px-5 py-2 rounded-full opacity-100">
           FREQUENTLY ASKED QUESTIONS
@@ -26,7 +27,7 @@ export default function Faq() {
           We Have Answers!
         </p>
       </div>
-      <div className="faq1 w-[85%] bg-[#ffffff1a] text-white rounded-2xl p-5">
+      <div className="faq1 w-[85%] md:w-[55%] bg-[#ffffff1a] text-white rounded-2xl p-5">
         {faqs.map((faq, index) => (
           <div key={index} className="mb-3 border-b border-gray-500">
             <button
@@ -34,11 +35,14 @@ export default function Faq() {
               onClick={() => toggleAccordion(index)}
             >
               <span>{faq.question}</span>
-              <ChevronDownIcon
+              {/* <GoArrowDown
                 className={`w-5 h-5 transition-transform transform ${
                   openIndex === index ? "rotate-180" : "rotate-0"
                 }`}
-              />
+              /> */}
+              <div className={`w-5 h-5 border border-black rounded-md  bg-[#CEF23F] transition-transform transform ${
+                  openIndex === index ? "rotate-90" : "rotate-0"
+                }`}><GoArrowRight className=" text-black"/></div>
             </button>
             <div
               className={`transition-max-height duration-300 ease-in-out overflow-hidden ${
