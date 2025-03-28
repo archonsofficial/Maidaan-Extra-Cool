@@ -8,7 +8,7 @@ export default function FeaturesGrid() {
         {features.map((feature, index) => (
           <div
             key={index}
-            className="flex flex-col items-center p-6 rounded-lg bg-[#0A0A0A0D] border border-[#FFFFFF14] backdrop-blur-[20px]"
+            className="flex flex-col items-center p-6 rounded-lg bg-[#0A0A0A0D] border border-[#FFFFFF14] backdrop-blur-[60px]"
           >
             <img
               src={feature.icon}
