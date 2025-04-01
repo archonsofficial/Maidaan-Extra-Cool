@@ -4,9 +4,9 @@ import { maidaanMainLogo } from "@/assets";
 
 export default function Footer() {
   return (
-    <div className="bg-[#FFFFFF1A] text-white py-8">
-      <div className="max-w-screen-xl mx-auto px-4">
-        <div className="bg-white/10 p-5 rounded-2xl flex flex-col md:flex-row justify-between items-start gap-6 border border-transparent">
+    <div className=" text-white py-8 ">
+      <div className="max-w-screen-xl mx-auto px-4 flex  flex-col items-center justify-center">
+        <div className="bg-white/10 p-5  w-[80vw] rounded-2xl flex flex-col md:flex-row justify-between items-center md:items-start gap-6 border border-transparent">
           {/* Logo & Links Section */}
           <img className="w-44 h-auto " src={maidaanMainLogo} alt="Logo" />
 
@@ -26,7 +26,7 @@ export default function Footer() {
         </div>
 
         {/* Links Section */}
-        <div className=" rounded-2xl bg-[#FFFFFF1A] flex flex-col text-white py-8 justify-between items-center mt-8">
+        <div className=" w-[80vw] rounded-2xl bg-[#FFFFFF1A] flex flex-col text-white py-8 justify-between items-center mt-8">
           <Link to="/" className="text-[#CEF23F] font-medium text-xl mb-4">
             Follow us:
           </Link>

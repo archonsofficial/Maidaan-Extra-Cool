@@ -35,11 +35,14 @@ export default function ServicesSection() {
               </div>
               <button className="flex gap-2 justify-center align-middle group">
                 {service.service + " "}
+
                 <ArrowCircleRight2
-                  size="24"
-                  color="#ffffff"
-                  className="-rotate-45 group-hover:animate-arrowRotate "
-                />{" "}
+                  size={24}
+                  color="black"
+                  className="bg-[#CEF23F] rounded-2xl transition-transform duration-300 ease-in-out -rotate-45 group-hover:rotate-0"
+                />
+
+                
               </button>
             </div>
           ))}
