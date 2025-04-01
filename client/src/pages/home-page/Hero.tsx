@@ -21,9 +21,9 @@ export default function Hero() {
             tournament offers a chance to challenge yourself and connect with
             others.
           </p>
-          <NavLink to={"signup"}>
+          <NavLink to={"signin"}>
             <div className="w-max mt-8">
-              <Button text={"Sign in"} sty="font medium px-8 py-3 text-lg " />
+              <Button text={"Sign in"} sty="font medium py-3 text-lg " />
             </div>
           </NavLink>
           {/* <button className="mt-8 bg-[#CEF23F] text-black  font-medium  rounded-full px-8 py-3 text-lg transition-transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-lime-300">

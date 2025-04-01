@@ -1,5 +1,6 @@
 import { Button } from "@/components";
 import { tournaments } from "@/config";
+import { NavLink } from "react-router-dom";
 
 export default function Tournament() {
   return (
@@ -12,7 +13,9 @@ export default function Tournament() {
         </div>
         <h2 className="text-4xl font-normal">Explore Our Tournaments</h2>
         <div className="flex justify-end items-end mb-8 ">
-          <Button text="View All Tournaments" sty="" />
+          <NavLink to={"tournaments"}>
+            <Button text="View All Tournaments" sty="" />
+          </NavLink>
         </div>
 
         {/* table content */}

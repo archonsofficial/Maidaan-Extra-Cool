@@ -1,8 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import { Navbar, Footer } from "@/components";
-import { AuthPage, HomePage } from "@/pages";
-import OverviewPage from "./pages/overview-page/OverviewPage";
-import SchedulePage from "./pages/overview-page/SchedulePage";
+import { AuthPage, HomePage, TournamentDetailsPage, TournamentPage } from "@/pages";
 
 function App() {
   return (
@@ -12,10 +10,10 @@ function App() {
 
       {/* Pages */}
       <Routes>
-        <Route path="/signup" element={<AuthPage />} />
         <Route path="/" element={<HomePage />} />
-        <Route path="/overview" element={<OverviewPage/>} />
-        <Route path="/schedule" element={<SchedulePage/>} />
+        <Route path="/signin" element={<AuthPage />} />
+        <Route path="/tournaments" element={<TournamentPage />} />
+        <Route path="/tournamentDetails" element={<TournamentDetailsPage />} />
       </Routes>
 
       {/* Footer */}

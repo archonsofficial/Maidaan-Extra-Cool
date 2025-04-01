@@ -10,7 +10,7 @@ export default function AuthPage() {
       <span>
         <img src=".../assets/maidaan"></img>
       </span>
-      YO hello im damned dude
+      Namaste
     </div>
   );
 }
