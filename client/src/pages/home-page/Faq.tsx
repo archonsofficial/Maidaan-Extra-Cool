@@ -1,7 +1,7 @@
 // import { Accordion, AccordionItem, Chip } from "@nextui-org/react";
 import { useState } from "react";
 // import { ChevronDownIcon } from "@heroicons/react/24/outline";
-import { GoArrowRight } from "react-icons/go";
+import { GoChevronRight } from "react-icons/go";
 import { faqs } from "@/config";
 
 export default function Faq() {
@@ -42,7 +42,7 @@ export default function Faq() {
               /> */}
               <div className={`w-5 h-5 border border-black rounded-md  bg-[#CEF23F] transition-transform transform ${
                   openIndex === index ? "rotate-90" : "rotate-0"
-                }`}><GoArrowRight className=" text-black"/></div>
+                }`}><GoChevronRight className=" text-black"/></div>
             </button>
             <div
               className={`transition-max-height duration-300 ease-in-out overflow-hidden ${
