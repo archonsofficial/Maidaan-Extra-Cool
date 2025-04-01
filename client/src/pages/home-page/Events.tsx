@@ -3,7 +3,7 @@ import { events } from "@/config";
 
 export default function Events() {
   return (
-    <section className=" text-white py-0 m-8">
+    <section className=" text-white py-0 m-16">
       <div className="container mx-auto">
         <div className="flex justify-start items-end mb-8">
           <button className="linkbtn text-[#CEF23F] bg-[#FFFFFF10] px-4 py-[10px] rounded-full text-sm  font-bold h-9 font-secondaryFont flex items-center">
