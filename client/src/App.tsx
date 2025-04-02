@@ -1,10 +1,15 @@
 import { Routes, Route, useLocation } from "react-router-dom";
 import { Navbar, Footer } from "@/components";
-import { AuthPage, HomePage, TournamentDetailsPage, TournamentPage } from "@/pages";
+import {
+  AuthPage,
+  HomePage,
+  TournamentDetailsPage,
+  TournamentPage,
+} from "@/pages";
 
 function App() {
   const location = useLocation();
-  const hideNavFooter = location.pathname === "/signup";
+  const hideNavFooter = location.pathname === "/signin";
   return (
     <div className="bg-black">
       {/* NavBar */}
