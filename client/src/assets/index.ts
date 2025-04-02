@@ -19,8 +19,10 @@ import tournamentFour from "./tournament_four.jpeg";
 import eventOne from "./event_one.jpeg";
 import eventTwo from "./event_two.jpeg";
 import eventThree from "./event_three.jpeg";
+import googleIcon from "./icons8-google-96.png";
 
 export {
+  googleIcon,
   maidaanMainLogo,
   beautifulGirlPlayingBadminton,
   beautifulGirlPlayingLawnTennis,

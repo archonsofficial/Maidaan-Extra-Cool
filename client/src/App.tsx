@@ -1,12 +1,14 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import { Navbar, Footer } from "@/components";
 import { AuthPage, HomePage, TournamentDetailsPage, TournamentPage } from "@/pages";
 
 function App() {
+  const location = useLocation();
+  const hideNavFooter = location.pathname === "/signup";
   return (
     <div className="bg-black">
       {/* NavBar */}
-      <Navbar />
+      {!hideNavFooter && <Navbar />}
 
       {/* Pages */}
       <Routes>
@@ -17,9 +19,11 @@ function App() {
       </Routes>
 
       {/* Footer */}
-      <div className="bg-black">
-        <Footer />
-      </div>
+      {!hideNavFooter && (
+        <div className="bg-black">
+          <Footer />
+        </div>
+      )}
     </div>
   );
 }
